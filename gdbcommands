@@ -1,0 +1,11 @@
+run
+shell echo -e "\nCRASH ON" `date`
+info program
+shell echo -e "\nBACKTRACE\n"
+bt
+shell echo -e "\nBACKTRACE FULL\n"
+bt full
+shell echo -e "\nTHREADS\n"
+info threads
+shell echo -e "\nTHREADS BACKTRACE\n"
+thread apply all bt full
