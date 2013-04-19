@@ -6,3 +6,7 @@ The reason i use "oldname" and "newname" for worlserver binary is because you mi
 reports/suggestions? comment here or email: lillecarl RETARDEDA gmail.com
 
 This gist will be updated when the restarter is. Regards
+
+NEEDED PACKAGES:
+screen
+for debug you also need: gdb
