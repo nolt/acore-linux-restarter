@@ -1,15 +1,8 @@
-Put all those files with their appropiate filenames inside your trinitycore folder.
+To run wowadmin you must specify your servers locations inside the script and set the proper names.
 
-run start.sh for regular startup
-run startdebug.sh for debug startup
+The reason i use "oldname" and "newname" for worlserver binary is because you might want to run more then 1 realm, then you set up 2 wowadmin.sh clones, same authserver config, but different worldserver path and "newnames". This will make multirealming on linux very simple.
 
-how to stop the server:
 
-screen -r worldserver
+reports/suggestions? comment here or email: lillecarl RETARDEDA gmail.com
 
-press ctrl+c a few times.
-alternative:
-server shutdown 5.
-Once server was shut down you must precc ctrl+c or it will start again.
-
-stop*.sh stops what you want to stop
+This gist will be updated when the restarter is. Regards
