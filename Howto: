@@ -11,3 +11,5 @@ press ctrl+c a few times.
 alternative:
 server shutdown 5.
 Once server was shut down you must precc ctrl+c or it will start again.
+
+stop*.sh stops what you want to stop
