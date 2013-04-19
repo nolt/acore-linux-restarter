@@ -1,0 +1,13 @@
+Put all those files with their appropiate filenames inside your trinitycore folder.
+
+run start.sh for regular startup
+run startdebug.sh for debug startup
+
+how to stop the server:
+
+screen -r worldserver
+
+press ctrl+c a few times.
+alternative:
+server shutdown 5.
+Once server was shut down you must precc ctrl+c or it will start again.
