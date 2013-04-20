@@ -11,7 +11,7 @@ WSRV_BIN=mangosd
 WSRV_SCR=mangosd
 
 echo "run" > gdbcommands
-echo "shell echo -e \"\nCRASHLOG BEGIN" >> gdbcommands
+echo "shell echo -e \"\nCRASHLOG BEGIN\n\"" >> gdbcommands
 echo "info program" >> gdbcommands
 echo "shell echo -e \"\nBACKTRACE\n\"" >> gdbcommands
 echo "bt" >> gdbcommands
