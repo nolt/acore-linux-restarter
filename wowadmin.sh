@@ -101,7 +101,7 @@ case "$1" in
         while x=1;
         do
             gdb $WPATH/$WSRV_BIN --batch -x gdbcommands | tee current
-            NOW=$(date +"%s-%d-%m-%Y")
+            NOW=$(date +"%T-%d-%m-%Y")
             mkdir -p $THIS_FOLDERPATH/crashes
             mv current $THIS_FOLDERPATH/crashes/$NOW.log &>/dev/null
             killall -9 $WSRV_BIN
@@ -113,7 +113,7 @@ case "$1" in
         while x=1;
         do
             ./$WSRV_BIN
-            NOW=$(date +"%s-%d-%m-%Y")
+            NOW=$(date +"%T-%d-%m-%Y")
             echo $NOW $WSRV_BIN stopped, restarting! | tee -a $THIS_FULLPATH.log
             sleep 1
         done
@@ -123,7 +123,7 @@ case "$1" in
         while x=1;
         do
             ./$ASRV_BIN
-            NOW=$(date +"%s-%d-%m-%Y")
+            NOW=$(date +"%T-%d-%m-%Y")
             echo $NOW $ASRV_BIN stopped, restarting! | tee -a $THIS_FULLPATH.log
             sleep 1
         done
