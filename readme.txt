@@ -1,12 +1,7 @@
-To run wowadmin you must specify your servers locations inside the script and set the proper names.
+# Linux MaNGOS/TrinityCore restarter for *nix.
 
-The reason i use "oldname" and "newname" for worlserver binary is because you might want to run more then 1 realm, then you set up 2 wowadmin.sh clones, same authserver config, but different worldserver path and "newnames". This will make multirealming on linux very simple.
+You have to install two additional packages:
+* ***screen***
+* ***gdb***
 
-
-reports/suggestions? comment here or email: lillecarl RETARDEDA gmail.com
-
-This gist will be updated when the restarter is. Regards
-
-NEEDED PACKAGES:
-screen
-for debug you also need: gdb
+If you want to run multi realm server, just copy wowadmin.sh and change WPATH variable.

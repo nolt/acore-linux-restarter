@@ -3,8 +3,8 @@
 THIS_FULLPATH=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd -P)/`basename "${BASH_SOURCE[0]}"`
 THIS_FOLDERPATH=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd -P)
 
-APATH=/home/mangos/mangos-server/bin
-WPATH=/home/mangos/mangos-server/bin
+APATH=/path/to/your/realmd
+WPATH=/path/to/your/mangosd
 ASRV_BIN=realmd         #This usually doesnt change. TrinityCore: authserver  MaNGOS: realmd  ArcEmu: whocares?
 WSRV_BIN_ORG=mangosd    #This usually doesnt change. TrinityCore: worldserver MaNGOS: mangosd ArcEmu: whocares?
 WSRV_BIN=mangosd
