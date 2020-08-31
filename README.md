@@ -1,4 +1,5 @@
-# Linux restarter for ACore/MaNGOS/CMangos/TrinityCore.
+# Linux restarter for ACore/MaNGOS/CMangos.
+With this tool you can start/stop/restart your server in no time.
 
 Support : [AzerothCore](http://azerothcore.org)
 
