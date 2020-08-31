@@ -3,12 +3,11 @@
 THIS_FULLPATH=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd -P)/`basename "${BASH_SOURCE[0]}"`
 THIS_FOLDERPATH=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd -P)
 
-APATH=/path/to/your/realmd
-WPATH=/path/to/your/mangosd
-ASRV_BIN=realmd         #This usually doesnt change. TrinityCore: authserver  MaNGOS: realmd  ArcEmu: whocares?
-WSRV_BIN_ORG=mangosd    #This usually doesnt change. TrinityCore: worldserver MaNGOS: mangosd ArcEmu: whocares?
-WSRV_BIN=mangosd
-WSRV_SCR=mangosd
+APATH=/opt/azeroth-server/bin
+WPATH=/opt/azeroth-server/bin
+ASRV_BIN=authserver     #Change this to your auth server. ACore: authserver MaNGOS/CMaNGOS: realmd
+WSRV_BIN=worldserver    #Change this to your world server. ACore: worldserver MaNGOS/CMaNGOS: mangosd
+WSRV_SCR=worldserver
 
 echo "run" > gdbcommands
 echo "shell echo -e \"\nCRASHLOG BEGIN\n\"" >> gdbcommands
@@ -157,7 +156,7 @@ case "$1" in
     "amonitor" )
     monitorAuth
     ;;
-    
+
     "start" )
     startWorld
     startAuth
